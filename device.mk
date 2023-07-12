@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
     WifiResMarble \
     WifiResMarbleCN \
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
