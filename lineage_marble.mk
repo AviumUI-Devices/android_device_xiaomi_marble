@@ -7,8 +7,14 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common lineage configuration
+# Inherit from common AviumUI configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+AVIUM_BUILDTYPE := Test
+AVIUM_FORCE_SET_FAKE_PROP := true
+AVIUM_IS_OFFICIAL := false
+AVIUM_MAINTAINER := kaffuchino233
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
 
 PRODUCT_NAME := lineage_marble
 PRODUCT_DEVICE := marble
